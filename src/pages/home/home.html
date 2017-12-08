@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card no-padding>
+    <ion-card-header>
+      <ion-card-title>
+        Pie Chart
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <pie-chart [data]="pieData"></pie-chart>
+    </ion-card-content>
+  </ion-card>
+  <ion-card no-padding>
+    <ion-card-header>
+      <ion-card-title>
+        Force Layout
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <force-layout [data]="forceData"></force-layout>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Chord Layout</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <chord-layout [data]='chordData'></chord-layout>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Tree Layout
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <tree-layout *ngIf='treeData' [data]='treeData'></tree-layout>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Pack Layout</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <pack-layout [data]="packData"></pack-layout>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Histogram Layout</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <histogram-layout></histogram-layout>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Stack Chart</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <stack-shape [data]='stackData'></stack-shape>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Area Chart</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <area-chart *ngIf='areaData' [data]='areaData'></area-chart>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
